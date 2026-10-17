@@ -1,0 +1,23 @@
+{
+  "name": "shanjitong-search-pipeline",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Shanjitong Search Pipeline 1.2: safer discovery, CJK-aware lexical indexing, hybrid retrieval and embedding backfill.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "worker": "node src/worker.js",
+    "test": "node --test",
+    "test:offline": "node --test test/offline.test.js",
+    "smoke:remote": "node scripts/smoke-test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "robots-parser": "^3.0.1"
+  }
+}
